@@ -1,0 +1,130 @@
+:root {
+    --bgcolor: white;
+    --fontcolor: blue;
+    --fontsize: 1rem;
+    --padding1: 0.5rem;
+}
+
+:root.dark {
+    --bgcolor: black;
+    --fontcolor: white;
+}
+
+body {
+    background: var(--bgcolor);
+}
+
+.text1 {
+    padding: var(--padding1);
+    font-size: var(--fontsize);
+    font-weight: bold;
+    color: var(--fontcolor);
+}
+
+.text1:hover {
+    color: red;
+}
+
+.text1:active {
+    color: blue;
+}
+
+.text3:visited {
+    color: orange;
+}
+
+.text2:focus {
+    outline: 4px solid blue;
+}
+
+.text4:checked {
+    outline: 4px solid blue;
+}
+
+button:disabled {
+    background: red;
+    color: white;
+}
+
+button:enabled {
+    background: royalblue;
+    color: white;
+}
+
+ul {
+    color: var(--fontcolor);
+}
+
+ul li:first-child {
+    color: red;
+}
+
+ul li:last-child {
+    color: royalblue;
+}
+
+div:not(.highlight) {
+    color: gray;
+}
+
+div:empty {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: red;
+}
+
+h1 {
+    color: var(--fontcolor);
+}
+
+div > p {
+    color: red;
+}
+
+h1 + p {
+    color: blue;
+}
+
+h1 ~ p {
+    color: blue;
+}
+
+ul li:nth-child(1) {
+    color: red;
+}
+
+ul li:nth-child(2n) {
+    color: yellow;
+}
+
+ul li:nth-child(3n + 1) {
+    color: purple;
+}
+
+ul li:nth-of-type(2) {
+    color: orange;
+}
+
+ul li:first-of-type {
+    color: gold;
+}
+
+ul li:last-of-type {
+    color: gold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a[data-text^="hej"] {
+    color: gold;
+}
+
+input[type="text"] {
+    padding: 1rem;
+    color: gray;
+}
